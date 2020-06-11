@@ -17,6 +17,11 @@
             :class="{ 'bg-blue-500 text-gray-200': isActive['uppercase']() }" @click="commands['uppercase']">
           uppercase
         </button>
+        <button
+            class="outline-none mr-4 text-primary bg-gray-200 hover:bg-gray-400 text-sm font-medium py-3 px-5 rounded-lg"
+            :class="{ 'bg-blue-500 text-gray-200': isActive['text-red-500']() }" @click="commands['text-red-500']">
+          text-red-500
+        </button>
       </div>
     </editor-menu-bar>
     <div class="border border-gray-300 rounded-lg shadow p-6 outline-none">
@@ -40,6 +45,7 @@
             new Tailwind('font-bold', [{ tag: 'strong' }, { tag: 'b' }]),
             new Tailwind('text-lg'),
             new Tailwind('uppercase'),
+            new Tailwind('text-red-500'),
             new History(),
           ],
           content: `
@@ -47,6 +53,7 @@
           <p><span class="font-bold">font-bold</span> <strong>strong</strong></p>
           <p><span class="text-lg">text-lg</span></p>
           <p><span class="uppercase">uppercase</span></p>
+          <p><span class="text-red-500">text-red-500</span></p>
         `,
         }),
       }
