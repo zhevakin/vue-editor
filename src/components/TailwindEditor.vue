@@ -13,7 +13,7 @@
           text-lg
         </button>
         <button
-            class="outline-none mr-4 text-primary bg-gray-300 hover:bg-gray-400 text-sm font-medium py-3 px-5 rounded-lg"
+            class="outline-none mr-4 text-primary bg-gray-200 hover:bg-gray-400 text-sm font-medium py-3 px-5 rounded-lg"
             :class="{ 'bg-blue-500 text-gray-200': isActive['uppercase']() }" @click="commands['uppercase']">
           uppercase
         </button>
